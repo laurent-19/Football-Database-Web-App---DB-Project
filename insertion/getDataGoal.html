@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<style>
+
+table 
+{
+	border: none;
+}
+
+th 
+{
+  border: none;
+  height: 60px;
+  text-align: left;
+  width: 80%;
+}
+
+td 
+{
+  border: none;
+  height: 60px;
+  text-align: left;
+  width: 20%;
+}
+
+
+</style>
+
+<form method="post" action="insertGoal.php">
+
+    <table width="40%">
+
+
+      <tr>
+        <td>
+          PlayerGoal_Id 
+        </td>
+        <td>
+          <input type="number" name="PlayerGoal_Id" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          PlayerAssist_Id 
+        </td>
+        <td>
+          <input type="number" name="PlayerAssist_Id" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Match_Id
+        </td>
+        <td>
+          <input type="number" name="Match_Id" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Time
+        </td>
+        <td>
+          <input type="number" name="Time" />
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          xG:
+        </td>
+        <td>
+        <input type="range" name="xG" min="0" max="1" value="0" step="0.05">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        Type
+        </td>
+        <td>
+          <input type="text" name="Type" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          IsOwnGoal:
+        </td>
+        <td>
+          <input type="radio" class="radio" name="IsOwnGoal" value="yes"> yes
+          <input type="radio" class="radio" name="IsOwnGoal" value="no"> no
+        </td>
+        </tr>
+    
+    
+    </table><br><br>	
+    
+    <input type="submit" name="submit" value="Submit">
+    <input type="reset" value="Clear">
+	
+	
+</form>
+
+</body>
+</html>
